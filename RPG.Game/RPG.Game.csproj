@@ -43,9 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\Desktop\C#FinalProject\RPG.Game2\GameScript.cs">
-      <Link>GameScript.cs</Link>
-    </Compile>
+    <Compile Include="GamescriptFinal.cs" />
     <Compile Include="Turns.cs" />
     <Compile Include="CloseRangeDPS.cs" />
     <Compile Include="ICharacter.cs" />

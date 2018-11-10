@@ -14,14 +14,14 @@ namespace RPG.Game
 
         static void Main()
         {
-            string MonsterPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\Monster.Character.csv";
-            string TankPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\Tank.Character.csv";
-            string StatSupportPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\StatSupport.Character.csv";
-            string CloseRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\CloseRangeDPS.Character.csv";
-            string LongRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\LongRangeDPS.Character.csv";
-            string HealerPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\RPG.Game\bin\Debug\Healer.Character.csv";
+            string MonsterPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Monster.Character.csv";
+            string TankPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Tank.Character.csv";
+            string StatSupportPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\StatSupport.Character.csv";
+            string CloseRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\CloseRangeDPS.Character.csv";
+            string LongRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\LongRangeDPS.Character.csv";
+            string HealerPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Healer.Character.csv";
 
-
+            //Creates all the characters and allows you to rename the monster and characters
             string CreateorNo;
             string MonsterName;
             string MonsterClass;
@@ -50,11 +50,11 @@ namespace RPG.Game
             {
                 Console.WriteLine("You choose to use the old/default monster.");
             }
-            string RenameorNo;
+            string RenameorNoTank;
             string TankName;
             Console.WriteLine("Would you like to rename your tank? Type yes to do so.");
-            RenameorNo = Console.ReadLine();
-            if (RenameorNo == "yes")
+            RenameorNoTank = Console.ReadLine();
+            if (RenameorNoTank == "yes")
             {
                 Console.WriteLine("Write your character name for your tank.");
                 TankName = Console.ReadLine();
@@ -64,16 +64,16 @@ namespace RPG.Game
                     write.WriteLine(TankName + "," + "Physical Tank" + "," + "1000," + "1000," + "250," + "250," + "100," + "100," + "0," + "0," + "750," + "750," + "500," + "500");
                 }
             }
-            else if (RenameorNo != "yes")
+            else if (RenameorNoTank != "yes")
             {
                 Console.WriteLine("You choose to use the old/default tank name.");
             }
 
-            string RenameorNo2;
+            string RenameorNoStatSupport;
             string StatSupportName;
             Console.WriteLine("Would you like to rename your stat support? Type yes to do so.");
-            RenameorNo2 = Console.ReadLine();
-            if (RenameorNo2 == "yes")
+            RenameorNoStatSupport = Console.ReadLine();
+            if (RenameorNoStatSupport == "yes")
             {
                 Console.WriteLine("Write your character name for your stat support.");
                 StatSupportName = Console.ReadLine();
@@ -83,18 +83,18 @@ namespace RPG.Game
                     write.WriteLine(StatSupportName + "," + "Stat Support" + "," + "600," + "600," + "300," + "300," + "150," + "150," + "0," + "0," + "350," + "350," + "350," + "350");
                 }
             }
-            else if (RenameorNo2 != "yes")
+            else if (RenameorNoStatSupport != "yes")
             {
                 Console.WriteLine("You choose to use the old/default stat support name.");
             }
 
 
-            string CreateorNo1;
+            string CreateorNoCloseRDPS;
             string CloseRangeDPSName;
             string CloseRangeDPSClass;
 
             Console.WriteLine("Would you like to choose a new Close Range DPS or use the previous/default one? Type yes to do so.");
-            CreateorNo1 = Console.ReadLine();
+            CreateorNoCloseRDPS = Console.ReadLine();
             if (CreateorNo == "yes")
             {
                 Console.WriteLine("Write your character name and then your character class. Close Range DPS Class must be an Assassin, Warrior, or Battle Mage.");
@@ -112,16 +112,16 @@ namespace RPG.Game
                         goto Start;
                     }
             }
-            else if (CreateorNo1 != "yes")
+            else if (CreateorNoCloseRDPS != "yes")
             {
                 Console.WriteLine("You choose to use the old/default Close Range DPS.");
             }
-            string CreateorNo2;
+            string CreateorNoLongRDPS;
             string LongRangeDPSName;
             string LongRangeDPSClass;
 
             Console.WriteLine("Would you like to choose a new Long Range DPS or use the previous/default one? Type yes to do so.");
-            CreateorNo2 = Console.ReadLine();
+            CreateorNoLongRDPS = Console.ReadLine();
             if (CreateorNo == "yes")
             {
                 Console.WriteLine("Write your character name and then your character class. Long Range DPS Class must be a Mage, Archer, or Knife Slinger.");
@@ -139,15 +139,15 @@ namespace RPG.Game
                         goto Start;
                     }
             }
-            else if (CreateorNo2 != "yes")
+            else if (CreateorNoLongRDPS != "yes")
             {
                 Console.WriteLine("You choose to use the old/default Long Range DPS.");
             }
-            string RenameorNo3;
+            string RenameorNoHealer;
             string HealerName;
-            Console.WriteLine("Would you like to rename your stat support? Type yes to do so.");
-            RenameorNo3 = Console.ReadLine();
-            if (RenameorNo3 == "yes")
+            Console.WriteLine("Would you like to rename your healer? Type yes to do so.");
+            RenameorNoHealer = Console.ReadLine();
+            if (RenameorNoHealer == "yes")
             {
                 Console.WriteLine("Write your character name for your healer.");
                 HealerName = Console.ReadLine();
@@ -157,7 +157,7 @@ namespace RPG.Game
                     write.WriteLine(HealerName + "," + "Healer" + "," + "450," + "450," + "500," + "500," + "0," + "0," + "100," + "100," + "300," + "300," + "300," + "300");
                 }
             }
-            else if (RenameorNo3 != "yes")
+            else if (RenameorNoHealer != "yes")
             {
                 Console.WriteLine("You choose to use the old/default healer name.");
             }
@@ -182,10 +182,10 @@ namespace RPG.Game
             
 
        
-
+            //All the methods that run the actual game.
             GameRun.OpeningDialogue();
             GameRun.ShowCharacterStats(Monster, Tank, StatSupport, CloseRangeDPS, LongRangeDPS, Healer);
-
+            //Loops until the monster dies
             do
             {
                 GameRun.TankActions(Monster, Tank, StatSupport);
@@ -201,7 +201,7 @@ namespace RPG.Game
 
         }
         
-
+        //Stream Readers that get the stats from CSV files.
         public static Character ReadMonsterStats(string MonsterPath)
             {
                 var MonsterStats = new Character();

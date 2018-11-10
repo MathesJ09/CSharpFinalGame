@@ -17,10 +17,10 @@ namespace RPG.Game
         string HealerAct;
 
 
-
+        //Opening
         public void OpeningDialogue()
         {
-            Console.WriteLine("Welcome to the game! The rules are simple. Use your companions below to defeat your enemies! Below is a list of characters including a tank, healer, ranged dps, close range dps, and a stat buffer. Your first enemy will be a giant. He is weak to magic but be careful as he hits incredibly hard on the physical side! Good luck!");
+            Console.WriteLine("Welcome to the game! Beat the monster to win the game!");
         }
         public void ShowCharacterStats(Character Monster, Character Tank, Character StatSupport, Character CloseRangeDPS, Character LongRangeDPS, Character Healer)
         {
@@ -40,6 +40,8 @@ namespace RPG.Game
             Console.WriteLine($"{Healer.Name} {Healer.Class} HP:{Healer.Health}/{Healer.MaxHealth} MP:{Healer.ManaPool}/{Healer.MaxManaPool} " +
                 $"PhyAtt:{Healer.PhysicalAttack} MagAtt:{Healer.MagicalAttack} PhyDef:{Healer.Defense} MagDef:{Healer.MagicalDefense}");
         }
+
+        //All methods below loop in main until monster is dead.
         public void TankActions(Character Monster, Character Tank, Character StatSupport)
         {
             Console.WriteLine("");

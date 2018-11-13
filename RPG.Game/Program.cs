@@ -14,12 +14,12 @@ namespace RPG.Game
 
         static void Main()
         {
-            string MonsterPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Monster.Character.csv";
-            string TankPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Tank.Character.csv";
-            string StatSupportPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\StatSupport.Character.csv";
-            string CloseRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\CloseRangeDPS.Character.csv";
-            string LongRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\LongRangeDPS.Character.csv";
-            string HealerPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\bin\Debug\Healer.Character.csv";
+            string MonsterPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Monster.Character.csv";
+            string TankPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Tank.Character.csv";
+            string StatSupportPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\StatSupport.Character.csv";
+            string CloseRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\CloseRangeDPS.Character.csv";
+            string LongRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\LongRangeDPS.Character.csv";
+            string HealerPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Healer.Character.csv";
 
             //Creates all the characters and allows you to rename the monster and characters
             string CreateorNo;

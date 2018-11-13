@@ -46,7 +46,6 @@
     <Compile Include="GamescriptFinal.cs" />
     <Compile Include="Turns.cs" />
     <Compile Include="CloseRangeDPS.cs" />
-    <Compile Include="ICharacter.cs" />
     <Compile Include="CharacterClass.cs" />
     <Compile Include="Healer.cs" />
     <Compile Include="LongRangeDPS.cs" />
@@ -58,6 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="csv\CloseRangeDPS.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\Healer.Character.csv" />
+    <None Include="csv\LongRangeDPS.Character.csv" />
+    <None Include="csv\Monster.Character.csv" />
+    <None Include="csv\StatSupport.Character.csv" />
+    <None Include="csv\Tank.Character.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

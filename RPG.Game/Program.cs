@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
+using System.Reflection;
 
 namespace RPG.Game
 {
@@ -14,12 +14,14 @@ namespace RPG.Game
 
         static void Main()
         {
-            string MonsterPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Monster.Character.csv";
-            string TankPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Tank.Character.csv";
-            string StatSupportPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\StatSupport.Character.csv";
-            string CloseRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\CloseRangeDPS.Character.csv";
-            string LongRangeDPSPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\LongRangeDPS.Character.csv";
-            string HealerPath = @"C:\Users\Mathe\Desktop\OKRPGFIN\RPG.Game\CSharpFinalGame\RPG.Game\CSVFiles\Healer.Character.csv";
+            string FolderAssembly = Assembly.GetExecutingAssembly().Location;
+            string Folder = Path.GetDirectoryName(FolderAssembly);
+            string MonsterPath = Folder + @"Monster.Character.csv";
+            string TankPath = Folder + @"Tank.Character.csv";
+            string StatSupportPath = Folder + @"StatSupport.Character.csv";
+            string CloseRangeDPSPath = Folder + @"CloseRangeDPS.Character.csv";
+            string LongRangeDPSPath = Folder + @"LongRangeDPS.Character.csv";
+            string HealerPath = Folder + @"Healer.Character.csv";
 
             //Creates all the characters and allows you to rename the monster and characters
             string CreateorNo;

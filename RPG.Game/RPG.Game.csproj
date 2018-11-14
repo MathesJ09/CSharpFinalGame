@@ -60,11 +60,21 @@
     <None Include="csv\CloseRangeDPS.Character.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="csv\Healer.Character.csv" />
-    <None Include="csv\LongRangeDPS.Character.csv" />
-    <None Include="csv\Monster.Character.csv" />
-    <None Include="csv\StatSupport.Character.csv" />
-    <None Include="csv\Tank.Character.csv" />
+    <None Include="csv\Healer.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\LongRangeDPS.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\Monster.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\StatSupport.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\Tank.Character.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

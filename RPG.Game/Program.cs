@@ -16,12 +16,12 @@ namespace RPG.Game
         {
             string FolderAssembly = Assembly.GetExecutingAssembly().Location;
             string Folder = Path.GetDirectoryName(FolderAssembly);
-            string MonsterPath = Folder + @"Monster.Character.csv";
-            string TankPath = Folder + @"Tank.Character.csv";
-            string StatSupportPath = Folder + @"StatSupport.Character.csv";
-            string CloseRangeDPSPath = Folder + @"CloseRangeDPS.Character.csv";
-            string LongRangeDPSPath = Folder + @"LongRangeDPS.Character.csv";
-            string HealerPath = Folder + @"Healer.Character.csv";
+            string MonsterPath = Folder + @"\Monster.Character.csv";
+            string TankPath = Folder + @"\Tank.Character.csv";
+            string StatSupportPath = Folder + @"\StatSupport.Character.csv";
+            string CloseRangeDPSPath = Folder + @"\CloseRangeDPS.Character.csv";
+            string LongRangeDPSPath = Folder + @"\LongRangeDPS.Character.csv";
+            string HealerPath = Folder + @"\Healer.Character.csv";
 
             //Creates all the characters and allows you to rename the monster and characters
             string CreateorNo;
